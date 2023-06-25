@@ -7,7 +7,7 @@ import '../../../moduls/produts.dart';
 Widget itemCards(int index, BuildContext context) {
   return GestureDetector(
     onTap: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ScreenDetails()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ScreenDetails(name: products[index].name, price: products[index].price, watchImage: products[index].img,)));
     },
     child: Column(
       children: [
