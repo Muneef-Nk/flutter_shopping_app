@@ -1,4 +1,4 @@
-# learn_shopping_app
+# shopping_app
 
 A new Flutter project.
 
