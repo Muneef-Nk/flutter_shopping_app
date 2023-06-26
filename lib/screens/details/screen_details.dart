@@ -36,7 +36,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
             height: MediaQuery.of(context).size.height * 0.6,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage(watchImage),
+                    image: AssetImage(widget.watchImage),
                     fit: BoxFit.cover)),
           ),
           Positioned(
@@ -71,8 +71,8 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Text(name, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-                    Text(price, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+                    Text(widget.name, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                    Text(widget.price, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
                   ],),
                   SizedBox(height: 15),
                   Row(
@@ -124,7 +124,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Details', style: TextStyle(fontSize: 18),),
+                      Text('Details', style: TextStyle(fontSize: 15),),
                       IconButton(onPressed: (){}, icon: Icon(Icons.add))
                     ],
                   ),
@@ -133,7 +133,7 @@ class _ScreenDetailsState extends State<ScreenDetails> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Shipping & Returns',style: TextStyle(fontSize: 18),),
+                      Text('Shipping & Returns',style: TextStyle(fontSize: 15),),
                       IconButton(onPressed: (){}, icon: Icon(Icons.add))
                     ],
                   ),

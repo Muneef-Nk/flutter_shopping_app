@@ -7,7 +7,7 @@ import '../../details/screen_details.dart';
 Widget holidayCards(int index, BuildContext context){
   return GestureDetector(
     onTap: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ScreenDetails(name: products[index].name, price: products[index].price, watchImage: products[index].img,)));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ScreenDetails(name: holidayProducts[index].name, price: holidayProducts[index].price, watchImage: holidayProducts[index].img,)));
     },
     child: Container(
       margin: EdgeInsets.only(top: 10,bottom: 20,left: 10, right: 10),
